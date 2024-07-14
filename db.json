@@ -1,5 +1,10 @@
 {
     "products": [
-        { "id": "1", "title": "a title", "descripción": 100, "price": 10, "url": "" }
+        { "id": "1", "title": "hamburguesa", "descripción": "Duo Clasico", "price": "S/. 10", "imagen": "" },
+        { "id": "2", "title": "hamburguesa", "descripción": "Duo Clasico", "price": "S/. 10", "imagen": "" },
+        { "id": "3", "title": "hamburguesa", "descripción": "Duo Clasico", "price": "S/. 10", "imagen": "" },
+        { "id": "4", "title": "hamburguesa", "descripción": "Duo Clasico", "price": "S/. 10", "imagen": "" },
+        { "id": "5", "title": "hamburguesa", "descripción": "Duo Clasico", "price": "S/. 10", "imagen": "" },
+        { "id": "6", "title": "hamburguesa", "descripción": "Duo Clasico", "price": "S/. 10", "imagen": "" }
     ]
 }
