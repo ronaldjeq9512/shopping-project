@@ -1,0 +1,12 @@
+/* styles.css */
+.navbar-nav .nav-item {
+    text-align: left;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .navbar-nav .nav-item {
+        width: auto;
+        text-align: initial;
+    }
+}
