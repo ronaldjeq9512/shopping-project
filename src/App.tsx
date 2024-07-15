@@ -1,21 +1,35 @@
 import './App.css'
-import { Header } from './components/Header'
+import { Footer } from './components/Footer/footer';
+import { Card } from './components/Card/card';
+import Json from './../db.json';
+import { Header } from './components/Header';
+
+
+const cards = [];
+
+Json.products.forEach(function (e) {
+  cards.push(
+    <Card
+      title={e.title}
+      descripción={e.descripción}
+      price={e.price}
+    />
+  )
+});
 
 function App() {
-  const emptyArray = Array.from({ length: 100 }, (_, index) => index + 1);
 
-  return (
-    <>
-        <Header />
-        <button type="button" className="btn btn-warning">Warning</button>
-        {emptyArray.map((_items, key)=> (
-          <p key={key}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia earum ullam a tempore. Dignissimos modi ab officia nihil dicta quae repellat quia tenetur inventore molestiae nesciunt nemo, est, optio neque!</p>
-        ))
-        }
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia earum ullam a tempore. Dignissimos modi ab officia nihil dicta quae repellat quia tenetur inventore molestiae nesciunt nemo, est, optio neque!</p>
-
-    </>
-  )
+return (
+  <>
+   <Header />
+   <div className='d-flex flex-wrap justify-content-center align-item-center'>
+          {cards}
+      </div>
+   
+    <Footer />
+  </>
+)
 }
+
 
 export default App
