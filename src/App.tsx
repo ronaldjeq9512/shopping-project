@@ -3,7 +3,7 @@ import { Footer } from './components/Footer/footer';
 import { Card } from './components/Card/card';
 import Json from './../db.json';
 import { Header } from './components/Header';
-
+import { Carousel } from './components/Carousel';
 
 const cards = [];
 
@@ -22,6 +22,7 @@ function App() {
 return (
   <>
    <Header />
+   <Carousel />
    <div className='d-flex flex-wrap justify-content-center align-item-center'>
           {cards}
       </div>
