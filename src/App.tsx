@@ -4,6 +4,7 @@ import { Card } from './components/Card/card';
 import Json from './../db.json';
 import { Header } from './components/Header';
 import { Carousel } from './components/Carousel';
+import { PrincipalNavigator } from './navigators/PrincipalNavigator';
 
 const cards = [];
 
@@ -20,15 +21,16 @@ Json.products.forEach(function (e) {
 function App() {
 
 return (
-  <>
+/*   <>
    <Header />
    <Carousel />
-   <div className='d-flex flex-wrap justify-content-center align-item-center'>
+   <section className='d-flex flex-wrap justify-content-center align-item-center'>
           {cards}
-      </div>
+    </section>
    
     <Footer />
-  </>
+  </> */
+    <PrincipalNavigator />
 )
 }
 
