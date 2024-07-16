@@ -1,4 +1,3 @@
-
 interface CardProps {
     image: string;
     title: string;
@@ -7,7 +6,7 @@ interface CardProps {
 }
 
 
-export const Card = ({ image, title, description, price}:CardProps) => {
+export const Card = ({ image, title, description, price}:CardProps) => {    
     return (
         <>
             <div className="card m-2 border-0 shadow" style={{width:'18rem'}}>
