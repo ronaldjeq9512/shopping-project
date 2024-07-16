@@ -1,5 +1,6 @@
 import { Card } from "../components/Card";
 import { Carousel } from "../components/Carousel";
+import { ErrorProductList } from "../components/Error/ErrorProductList";
 import { Footer } from "../components/Footer/footer";
 import { Header } from "../components/Header";
 import { Loader } from "../components/Loader/Loader";
@@ -31,6 +32,10 @@ export const HomeScreen = () => {
           ))}
         </section>
       )}
+      {error && (
+          <ErrorProductList />
+        )
+      }
       <Footer />
     </>
   );
