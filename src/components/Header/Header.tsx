@@ -1,8 +1,9 @@
 import { Cart } from "./Cart";
 import { LogoComponent } from "./Logo";
-import './Header.css'
+import './Header.css';
 import { MENU } from "../../constants/menu";
 import { NavItem } from "./NavItem";
+
 export const Header = () => {
     return (
         <header className="sticky-top">
@@ -16,10 +17,9 @@ export const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ms-sm-auto align-items-center">
-                            { MENU.map(item=> (
+                            { MENU.map(item => (
                                 <NavItem key={item.title} title={item.title} />
-                                ))
-                            }
+                            ))}
                             <li className="nav-item">
                                 <button type="button" className="btn btn-dark">Iniciar sesión</button>
                             </li>
