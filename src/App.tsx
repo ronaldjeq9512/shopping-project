@@ -1,6 +1,6 @@
 import './App.css'
 import { Footer } from './components/Footer/footer';
-import { Card } from './components/Card/card';
+import { Card } from './components/Card/card1';
 import Json from './../db.json';
 import { Header } from './components/Header';
 import { Carousel } from './components/Carousel';
