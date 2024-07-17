@@ -21,7 +21,7 @@ export const useProductInfo = ({ product }: UseProductInfoArgs) => {
     if (existingProduct) {
       setQuantity(existingProduct.quantity);
     } else {
-      setQuantity(0); // Reset quantity if product is not found in the cart
+      setQuantity(0);
     }
   }, [state, product]);
 

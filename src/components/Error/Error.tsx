@@ -1,4 +1,3 @@
-//import ErrorImage from '../../assets/images/home/errorHome.jpg';
 import './Error.css'
 
 interface ErrorProps {
