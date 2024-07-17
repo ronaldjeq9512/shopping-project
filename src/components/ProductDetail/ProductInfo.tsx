@@ -30,7 +30,7 @@ export const ProductInfo = ({ product } : ProductInfoProps) => {
           <h5 className="card-title">{product.title}</h5>
           <p className="card-text">{product.description}</p>
           <p className="card-text">
-            <strong>${product.price.toFixed(2)}</strong>
+            <strong>S/. {product.price.toFixed(2)}</strong>
           </p>
           <div className="d-flex align-items-center flex-grow-1">
             <button className="btn btn-secondary" onClick={handleDecrease}>

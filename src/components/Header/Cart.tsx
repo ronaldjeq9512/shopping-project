@@ -1,12 +1,14 @@
 import { SVGProps } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface CartProps extends SVGProps<SVGSVGElement> {
   totalQuantity: number;
-  onClick?: ()=>void;
 }
 
-const Cart = ({ totalQuantity, onClick, ...props }: CartProps) => (
-  <div onClick={onClick} className="position-relative d-inline-block">
+const Cart = ({ totalQuantity, ...props }: CartProps) => {
+  const navigate = useNavigate();
+  return (
+  <div onClick={()=> navigate('/checkout')} className="position-relative d-inline-block">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={props.width}
@@ -29,6 +31,6 @@ const Cart = ({ totalQuantity, onClick, ...props }: CartProps) => (
       </span>
     )}
   </div>
-);
+)};
 
 export { Cart };
