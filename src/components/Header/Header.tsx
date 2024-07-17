@@ -5,10 +5,20 @@ import { MENU } from "../../constants/menu";
 import { NavItem } from "./NavItem";
 import { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
     const cartContext = useContext(CartContext);
     const totalQuantity = cartContext?.state.totalQuantity?? 0;
+    const navigate = useNavigate();
+  
+    const handleNavigated = () => {
+      
+        navigate(`/login`, { replace: true });
+      
+    };
+
+
     return (
         <header className="sticky-top">
             <nav className="navbar bg-primary navbar-expand-sm" data-bs-theme="dark">
@@ -25,7 +35,7 @@ export const Header = () => {
                                 <NavItem key={item.title} title={item.title} />
                             ))}
                             <li className="nav-item">
-                                <button type="button" className="btn btn-dark">Iniciar sesión</button>
+                                <button onClick={handleNavigated} type="button" className="btn btn-dark">Iniciar sesión</button>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
