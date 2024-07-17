@@ -7,7 +7,6 @@ import { ProductList } from "../components/ProductList/ProductList";
 export const ProductDetailScreen = () => {
   const { productId } = useParams();
   const { isSearching, productDetail, error, existProducts, isLoading, productList} = useProductDetail({productId: productId??''})
-  console.log({productDetail})
   return (
     <>
       <Header />

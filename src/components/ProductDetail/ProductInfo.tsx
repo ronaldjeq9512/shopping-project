@@ -13,7 +13,6 @@ interface ProductInfoProps {
 }
 
 export const ProductInfo = ({ product } : ProductInfoProps) => {
-  console.log({product})
   const {quantity, handleDecrease, handleIncrease, handleRemove} = useProductInfo({product})
 
   return (

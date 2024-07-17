@@ -5,7 +5,7 @@ export const useCart = () => {
   const cartContext = useContext(CartContext);
 
   if (!cartContext) {
-    throw new Error("useProductInfo must be used within a CartProvider");
+    throw new Error("useCart must be used within a CartProvider");
   }
 
   const { state, dispatch } = cartContext;

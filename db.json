@@ -1,10 +1,169 @@
 {
-    "products": [
-        { "id": "1", "title": "hamburguesa", "description": "Duo Clasico", "price": 10, "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true" },
-        { "id": "2", "title": "hamburguesa2", "description": "Duo Clasico", "price": 10, "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true" },
-        { "id": "3", "title": "hamburguesa3", "description": "Duo Clasico", "price": 10, "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true" },
-        { "id": "4", "title": "hamburguesa4", "description": "Duo Clasico", "price": 10, "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true" },
-        { "id": "5", "title": "hamburguesa5", "description": "Duo Clasico", "price": 10, "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true" },
-        { "id": "6", "title": "hamburguesa6", "description": "Duo Clasico", "price": 10, "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true" }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "title": "hamburguesa",
+      "description": "Duo Clasico",
+      "price": 10,
+      "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true"
+    },
+    {
+      "id": "2",
+      "title": "hamburguesa2",
+      "description": "Duo Clasico",
+      "price": 10,
+      "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true"
+    },
+    {
+      "id": "3",
+      "title": "hamburguesa3",
+      "description": "Duo Clasico",
+      "price": 10,
+      "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true"
+    },
+    {
+      "id": "4",
+      "title": "hamburguesa4",
+      "description": "Duo Clasico",
+      "price": 10,
+      "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true"
+    },
+    {
+      "id": "5",
+      "title": "hamburguesa5",
+      "description": "Duo Clasico",
+      "price": 10,
+      "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true"
+    },
+    {
+      "id": "6",
+      "title": "hamburguesa6",
+      "description": "Duo Clasico",
+      "price": 10,
+      "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true"
+    }
+  ],
+  "orders": [
+    {
+      "id": "d881",
+      "products": [
+        {
+          "id": "3",
+          "title": "hamburguesa3",
+          "description": "Duo Clasico",
+          "price": 10,
+          "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true",
+          "quantity": 3
+        },
+        {
+          "id": "4",
+          "title": "hamburguesa4",
+          "description": "Duo Clasico",
+          "price": 10,
+          "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true",
+          "quantity": 5
+        }
+      ],
+      "total": 80,
+      "user": {
+        "firstName": "a",
+        "lastName": "d",
+        "address": "asd",
+        "phone": "961254785",
+        "paymentMethod": "efectivo"
+      }
+    },
+    {
+      "id": "d6c3",
+      "products": [
+        {
+          "id": "3",
+          "title": "hamburguesa3",
+          "description": "Duo Clasico",
+          "price": 10,
+          "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true",
+          "quantity": 3
+        },
+        {
+          "id": "4",
+          "title": "hamburguesa4",
+          "description": "Duo Clasico",
+          "price": 10,
+          "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true",
+          "quantity": 5
+        }
+      ],
+      "total": 80,
+      "user": {
+        "firstName": "a",
+        "lastName": "d",
+        "address": "d",
+        "phone": "12321321321321",
+        "paymentMethod": "efectivo"
+      }
+    },
+    {
+      "id": "f4db",
+      "products": [
+        {
+          "id": "2",
+          "title": "hamburguesa2",
+          "description": "Duo Clasico",
+          "price": 10,
+          "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true",
+          "quantity": 1
+        }
+      ],
+      "total": 17,
+      "user": {
+        "firstName": "a",
+        "lastName": "d",
+        "address": "d",
+        "phone": "12312321",
+        "paymentMethod": "efectivo"
+      }
+    },
+    {
+      "id": "06ef",
+      "products": [
+        {
+          "id": "3",
+          "title": "hamburguesa3",
+          "description": "Duo Clasico",
+          "price": 10,
+          "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true",
+          "quantity": 2
+        }
+      ],
+      "total": 27,
+      "user": {
+        "firstName": "a",
+        "lastName": "as",
+        "address": "d",
+        "phone": "12321",
+        "paymentMethod": "efectivo"
+      }
+    },
+    {
+      "id": "c1fe",
+      "products": [
+        {
+          "id": "2",
+          "title": "hamburguesa2",
+          "description": "Duo Clasico",
+          "price": 10,
+          "image": "https://gestion.pe/resizer/v2/IOUUSANWTNDP7G3IJPGGO6NZOI.jpg?auth=b7d3e745e6f7005ccc16aa8e2f397b78c06c297702d1c37acd7d45532c4775b2&width=580&height=330&quality=75&smart=true",
+          "quantity": 1
+        }
+      ],
+      "total": 17,
+      "user": {
+        "firstName": "d",
+        "lastName": "a",
+        "address": "s",
+        "phone": "12321321321",
+        "paymentMethod": "efectivo"
+      }
+    }
+  ]
 }
