@@ -13,7 +13,8 @@ interface ProductInfoProps {
 }
 
 export const ProductInfo = ({ product } : ProductInfoProps) => {
-  const {quantity, handleDecrease, handleIncrease, handleRemove} = useProductInfo()
+  console.log({product})
+  const {quantity, handleDecrease, handleIncrease, handleRemove} = useProductInfo({product})
 
   return (
     <div className="card mb-4">

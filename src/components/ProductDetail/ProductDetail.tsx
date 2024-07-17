@@ -8,6 +8,7 @@ interface ProductDetailProps {
 }
 
 export const ProductDetail = ({ isSearching, productDetail }: ProductDetailProps) => {
+  console.log({productDetail})
   return (
     <section className="my-4">
       {isSearching && (
