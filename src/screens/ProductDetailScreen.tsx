@@ -12,7 +12,7 @@ export const ProductDetailScreen = () => {
     <>
       <Header />
       <ProductDetail productDetail={productDetail} isSearching={isSearching} />
-      <ProductList existProducts={existProducts} productList={productList} error={error} isLoading={isLoading} />
+      <ProductList haveToReplace existProducts={existProducts} productList={productList} error={error} isLoading={isLoading} />
       <Footer />
     </>
   );

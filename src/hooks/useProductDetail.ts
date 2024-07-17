@@ -9,11 +9,9 @@ interface useProductDetailArgs {
 export const useProductDetail = ({ productId }: useProductDetailArgs) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
-  const [isSearching, setIsSearching] = useState(false); 
+  const [isSearching, setIsSearching] = useState(false);
   const [productList, setProductList] = useState<GetProductListResponse | []>([]);
-  const [productDetail, setProductDetail] = useState<Product | undefined>(
-    undefined
-  );
+  const [productDetail, setProductDetail] = useState<Product | undefined>(undefined);
 
   const getProductDetail = useCallback(
     (productList: Product[]) => {
@@ -26,13 +24,14 @@ export const useProductDetail = ({ productId }: useProductDetailArgs) => {
 
   const getProducts = useCallback(async () => {
     try {
-      setIsSearching(true)
+      setIsSearching(true);
       setError(false);
       setIsLoading(true);
       const response = await productsService.productList();
       if (response) {
         getProductDetail(response);
-        setProductList(response)
+        const filteredProductList = response.filter((item) => item.id !== productId);
+        setProductList(filteredProductList);
       }
     } catch (e) {
       setError(true);
@@ -40,7 +39,7 @@ export const useProductDetail = ({ productId }: useProductDetailArgs) => {
     } finally {
       setIsLoading(false);
     }
-  }, [getProductDetail]);
+  }, [getProductDetail, productId]);
 
   useEffect(() => {
     getProducts();

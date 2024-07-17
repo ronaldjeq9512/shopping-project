@@ -8,6 +8,7 @@ interface ProductListProps {
   existProducts: boolean;
   productList: Product[];
   error: boolean;
+  haveToReplace?: boolean;
 }
 
 export const ProductList = ({
@@ -15,6 +16,7 @@ export const ProductList = ({
   existProducts,
   productList,
   error,
+  haveToReplace
 }: ProductListProps) => {
   return (
     <>
@@ -35,6 +37,7 @@ export const ProductList = ({
               description={product.description}
               price={product.price}
               id={product.id}
+              haveToReplace={haveToReplace}
             />
           ))}
         </section>
