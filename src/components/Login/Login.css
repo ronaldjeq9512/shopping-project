@@ -1,0 +1,30 @@
+
+.centered-form {
+width: 100%;
+max-width: 400px;
+padding: 20px;
+border: 2px solid #007bff;
+border-radius: 10px;
+background-color: #ffffff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-login {
+    height: 100%;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.boton{
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+}
+.boton2{
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+}
