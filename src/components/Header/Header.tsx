@@ -3,9 +3,13 @@ import { LogoComponent } from "./Logo";
 import './Header.css';
 import { MENU } from "../../constants/menu";
 import { NavItem } from "./NavItem";
+import { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
+    const cartContext = useContext(CartContext);
+    const totalQuantity = cartContext?.state.totalQuantity?? 0;
     const navigate = useNavigate();
   
     const handleNavigated = () => {
@@ -35,7 +39,7 @@ export const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
-                                    <Cart width={25} height={25} />
+                                    <Cart width={25} height={25} totalQuantity={totalQuantity} />
                                 </a>
                             </li>
                         </ul>
