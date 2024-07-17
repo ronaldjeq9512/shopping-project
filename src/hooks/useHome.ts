@@ -23,7 +23,6 @@ export const UseHome = () => {
       }
     };
 
-    
     useEffect(()=>{
         getProducts()
     }, [])
