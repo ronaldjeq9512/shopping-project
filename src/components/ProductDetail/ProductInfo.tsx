@@ -41,7 +41,7 @@ export const ProductInfo = ({ product } : ProductInfoProps) => {
               +
             </button>
             <button className="btn btn-danger ms-3" onClick={handleRemove}>
-              Remove
+              Eliminar
             </button>
           </div>
         </article>

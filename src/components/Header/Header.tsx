@@ -3,8 +3,12 @@ import { LogoComponent } from "./Logo";
 import './Header.css';
 import { MENU } from "../../constants/menu";
 import { NavItem } from "./NavItem";
+import { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 
 export const Header = () => {
+    const cartContext = useContext(CartContext);
+    const totalQuantity = cartContext?.state.totalQuantity?? 0;
     return (
         <header className="sticky-top">
             <nav className="navbar bg-primary navbar-expand-sm" data-bs-theme="dark">
@@ -25,7 +29,7 @@ export const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
-                                    <Cart width={25} height={25} />
+                                    <Cart width={25} height={25} totalQuantity={totalQuantity} />
                                 </a>
                             </li>
                         </ul>
