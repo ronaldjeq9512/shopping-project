@@ -43,7 +43,7 @@ export const useProductDetail = ({ productId }: useProductDetailArgs) => {
 
   useEffect(() => {
     getProducts();
-  }, [getProducts]);
+  }, [getProducts, productId]);
 
   const existProducts = !error && !isLoading && productList.length > 0;
 
