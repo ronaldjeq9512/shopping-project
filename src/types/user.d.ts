@@ -21,7 +21,7 @@ export interface userLoginForm {
 }
 
 
-  export type UserState = User | undefined
+  export type UserState = User | null
   
   export type ActionUser =
     | { type: "ADD_USER"; user: User }
