@@ -1,0 +1,30 @@
+.navbar-nav .nav-item {
+    text-align: left;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .navbar-nav .nav-item {
+        width: auto;
+        text-align: initial;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(13, 110, 253);
+        z-index: 1;
+    }
+
+    .navbar-collapse.collapsing {
+        transition: height 0.3s ease;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+}

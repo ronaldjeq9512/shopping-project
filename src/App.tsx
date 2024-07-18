@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import { PrincipalNavigator } from './navigators/PrincipalNavigator';
+import { CartProvider } from './providers/CartProvider';
+import { UserProvider } from './providers/UserProvider';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-        <button type="button" class="btn btn-warning">Warning</button>
-    </>
-  )
+    <UserProvider>
+      <CartProvider>
+        <PrincipalNavigator />
+      </CartProvider>
+    </UserProvider>
+
+)
 }
 
-export default App
+export default App;

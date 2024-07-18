@@ -1,0 +1,7 @@
+.errorContainer {
+    gap: '10px' 
+}
+
+.errorText {
+    font-size: 20px;
+}
