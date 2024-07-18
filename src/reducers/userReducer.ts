@@ -3,7 +3,7 @@ import { ActionUser, UserState } from "../types/user";
 export const initialState: UserState = (() => {
   const savedState = localStorage.getItem('userState');
   return savedState ? JSON.parse(savedState) : {
-    user: undefined,
+    user: null,
   };
 })();
 
@@ -13,7 +13,7 @@ export const userReducer = (state: UserState, action: ActionUser): UserState => 
         state = {...action.user};
       break;
     case "REMOVE_USER":
-      state = undefined;
+      state = null;
       break;
     default:
       return state;
